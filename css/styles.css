@@ -649,6 +649,10 @@ ul {
   margin-bottom: 50px;
 }
 .menu-button {
+  transition: background-color var(--transition-time) var(--cubic),
+    color var(--transition-time) var(--cubic),
+    box-shadow var(--transition-time) var(--cubic);
+
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
@@ -691,12 +695,17 @@ ul {
   margin-bottom: 30px;
 }
 
-.portfolio-item:hover,
-.portfolio-item:focus {
-  transform: box-shadow;
+.products-link {
+  display: block;
+  transition: box-shadow var(--transition-time) var(--cubic);
+}
+
+.products-link:hover,
+.products-link:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
+
 .products-thumb {
   position: relative;
   overflow: hidden;
